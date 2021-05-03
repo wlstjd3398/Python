@@ -1,0 +1,82 @@
+[git 기본 사용법]
+
+wlstjd3398 Python 주소 
+https://github.com/wlstjd3398/Python.git
+
+
+학원 :
+바탕화면/Workspace/Python
+Ch05, 04.27, 기본 사용법 등등
+
+집 :
+C:
+
+
+1방법
+집에서 할때 git remote add origin 주소
+git push origin master 하면 경고창 뜸
+그래서 강제로 하게 하는 명령어 필요
+git push origin +master
+
+2방법
+원인은 깃의 원격 저장소와 현재 로컬 저장소가 동기화되어있지 않기때문입니다.
+해결방법도 동기화 시켜주면 간단하게 해결됩니다.
+git pull --rebase 원격저장소별칭 master
+
+3방법
+https://git-scm.com/book/ko/v2/Git%EC%9D%98-%EA%B8%B0%EC%B4%88-Git-%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+4방법
+https://psklog.tistory.com/27
+동기화 clone
+
+
+github 참고사이트
+https://www.a-mean-blog.com/ko/blog/%ED%86%A0%EB%A7%89%EA%B8%80/_/Git-GitHub-%EA%B0%84%EB%8B%A8-%EC%82%AC%EC%9A%A9%EB%B2%95
+선생님 evernote 추천오후 2:04 2021-04-29오후 2:04 2021-04-29
+
+git 기본사용법
+1. local repository를 생성
+# git init
+
+2. Git이 버전관리 대상 파일들의 상태 확인
+# git status
+
+3.버전 관리할 파일들을 추가
+# git add 파일명(폴더명)
+	git add . 싹다 추가
+
+4. commit 메시지를 작성
+# git commit -m "메시지내용"
+
+만약 최초 사용자 등록이 안되었으면 
+# git config --global user.email "github 등록한 본인 이메일"
+# git config --global user.name "아무거나"
+입력 후 사용자등록 해줘야 Commit 됨
+
+5. remote repository를 등록(최초 한번만 등록)
+# git remote add origin repository 주소
+
+6. commit 한 내용을 remote repository에 push(업로드)
+# git push origin master
+
+7. exit 는 창 나가기
+
+
+*현재경로 예하의 모든 파일을 Stage에 올리기 (Stage all files recursively from current path)
+$> git add -A
+
+
+
+추가할때는 
+$ git add Ch02/
+$ git commit -m "메시지내용"
+$ git push origin master
+끝
+
+파일 1개 지울때는
+$ git rm --cached '04.27.txt'
+$ git commit -m "fixed commit"
+$ git push origin master
+끝
+

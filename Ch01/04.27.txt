@@ -1,0 +1,54 @@
+Ch04. 자료구조
+
+자료  비슷 데이터
+1, 2, 3,
+1, 2, 0.1,
+true, false
+'a', 'apple'
+
+변수에 담아서 메모리 저장해줌
+
+1. 변수
+
+2. 배열(python에서는 List)
+중복허용o
+순서o
+선형구조로 연속적으로 저장 
+늘였다가 줄였다가 가능 동적List
+1 2 3 4 5 ...
+
+3. tuple
+정적List
+수정불가
+
+
+tuple보다는 List많이씀
+
+4. set(집합)
+주머니안에 1, 2, 3, 4, 5, 6...
+중복허용X
+순서 없음
+
+	set으로 들어온것은 순서대로 출력하려면 개별적으로 List로 변환해야함
+
+
+5. dictionary
+도서관 책 대분류처럼 
+key1 value1
+key2 value2
+key3 value3
+key4 value4
+key5 value5
+
+
+Ch03. 조건문
+
+top 
+|
+|
+|
+|
+|
+down(bottom)
+
+

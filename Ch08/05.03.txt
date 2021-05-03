@@ -1,0 +1,2 @@
+teminal에서
+pip3 install openpyxl 입력후 설치 완료
