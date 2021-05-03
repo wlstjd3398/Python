@@ -55,7 +55,7 @@ git 기본사용법
 입력 후 사용자등록 해줘야 Commit 됨
 
 5. remote repository를 등록(최초 한번만 등록)
-# git remote add origin repository 주소
+# git remote add origin repository주소
 
 6. commit 한 내용을 remote repository에 push(업로드)
 # git push origin master
