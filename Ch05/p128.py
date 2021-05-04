@@ -1,4 +1,6 @@
 # 단계 1 : 동전 앞면과 뒷면의 난수 확률분포 함수 정의
+import random
+
 def coin(n) :
     result = []
     for i in range(n) :
