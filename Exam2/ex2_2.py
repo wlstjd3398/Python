@@ -13,12 +13,13 @@ def gcd(a, b):
         temp = b
 
     while True:
-        if :
+        if a % temp == 0 and b % temp == 0:
             break
 
         temp -= 1
 
     return temp
+
 if __name__ =='__main__':
     print('1과 5의 최대공약수 :', gcd(1, 5))
     print('2과 6의 최대공약수 :', gcd(2, 6))

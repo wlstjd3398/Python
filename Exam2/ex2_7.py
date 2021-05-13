@@ -14,27 +14,23 @@ class Person:
         print('이름 :', self._name)
         print('나이 :', self._age)
 
-class Student:
+class Student(Person):
     def __init__(self, name, age, school, major):
         super().__init__(name, age)
         self._school = school
         self._major = major
     def hello(self):
-        print('이름 :', self._name)
-        print('나이 :', self._age)
+        super().hello()
         print('학교 :', self._school)
         print('전공 :', self._major)
 
-class Developer:
+class SalaryStudent(Student):
     def __init__(self, name, age, school, major, company):
         super().__init__(name, age, school, major)
-        self.company = company
+        self._company = company
 
     def hello(self):
-        print('이름 :', self._name)
-        print('나이 :', self._age)
-        print('학교 :', self._school)
-        print('전공 :', self._major)
+        super().hello()
         print('회사 :', self._company)
 
 if __name__ == '__main__':

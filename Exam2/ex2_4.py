@@ -8,20 +8,20 @@ import math, random
 
 def lotto():
 
-    lotto_set = set()
+    lotto_set = set()   # 주머니생성
 
     while True:
         num = math.ceil(random.random() * 45)
 
+        lotto_set.add(num)
 
-
-        if len(lotto_set) == 6:
+        if len(lotto_set) == 6: # 주머니안에 6개
             break
     return list(lotto_set)
 
 if __name__ == '__main__':
 
-    for i in range(5):
+    for i in range(5):  # 5번 반복
         # 로또 번호 생성
         lotto_nums = lotto()
 

@@ -10,12 +10,12 @@ def game():
         you_word = input('가위, 바위, 보 입력 : ')
         try:
             if you_word not in words:
-                raise ValueError
+                raise ValueError    # 에러를 수동으로 발생
         except ValueError:
             print('잘못 입력 하셨습니다.')
-            return
+            continue
         else:
-            pass
+            break
 
     com_word = random.choice(words)
     print('컴퓨터 결과 :', com_word)
@@ -40,7 +40,7 @@ def game():
         print('무승부!')
 
 while True:
-
+    game()
     print('0:종료, 1:한번 더하기')
     again = int(input('입력 :'))
 
