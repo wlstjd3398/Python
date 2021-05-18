@@ -45,6 +45,7 @@ git 기본사용법
 3.버전 관리할 파일들을 추가
 # git add 파일명(폴더명)
 	git add . 싹다 추가
+	git add / 현재 폴더안에서 git파일 제외하고 업로드
 
 4. commit 메시지를 작성
 # git commit -m "메시지내용"
@@ -73,7 +74,7 @@ $ git add Ch02/
 $ git commit -m "메시지내용"
 $ git push origin master
 끝
-
+git
 파일 1개 지울때는
 $ git rm --cached '04.27.txt'
 $ git commit -m "fixed commit"
