@@ -46,6 +46,14 @@ git 기본사용법
 # git add 파일명(폴더명)
 	git add . 싹다 추가
 	git add / 현재 폴더안에서 git파일 제외하고 업로드
+	git add -p 
+현재 변경된 코드들의 파일들을 하나씩보여주고 해당파일을 stage에 
+올릴지 말지 선택가능(status diff add 한번에 진행)
+y는 해당hunk를 스테이지에 올리고
+n은 해당 hunk를 스테이지에 올리지 않고 
+q는 종료
+
+이후에 commit -m "", push origin master실행 하면 완료!!
 
 4. commit 메시지를 작성
 # git commit -m "메시지내용"
