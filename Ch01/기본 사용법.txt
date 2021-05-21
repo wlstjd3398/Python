@@ -43,7 +43,7 @@ git 기본사용법
 # git status
 
 3.버전 관리할 파일들을 추가
-# git add 파일명(폴더명)
+# git add "파일명(폴더명)"
 	git add . 싹다 추가
 	git add / 현재 폴더안에서 git파일 제외하고 업로드
 	git add -p 
