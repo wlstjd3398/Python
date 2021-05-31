@@ -89,3 +89,11 @@ $ git commit -m "fixed commit"
 $ git push origin master
 끝
 
+
+최초추가시 쌤방법
+init
+add Ch01/
+commit -m ""
+remote add origin 주소
+push origin master
+
